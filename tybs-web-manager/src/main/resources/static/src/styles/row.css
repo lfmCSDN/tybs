@@ -1,0 +1,13 @@
+.row-ise {
+    margin-top: 10px;
+}
+.row-ise div div select {
+    height: 30px;
+    padding: 3.5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0;
+}
+.row label{
+    padding-top: 5px;
+}

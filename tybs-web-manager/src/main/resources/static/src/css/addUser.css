@@ -1,0 +1,10 @@
+body{
+    padding-top: 10px;
+}
+.layui-input-button{
+    width: 208px !important;
+    /*margin: auto !important;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}

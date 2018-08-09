@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Youlema.com Inc.
+  ~ Copyright (c) 2011-2013 All Rights Reserved
+  -->
+
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--开启驼峰命名-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--全局的映射器启用-->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 设置超时时间, 它决定驱动等待一个数 据库响应的时间-->
+        <setting name="defaultStatementTimeout" value="3000"/>
+        <!--允许JDBC支持生成的键-->
+        <setting name="useGeneratedKeys" value="true"/>
+    </settings>
+</configuration>

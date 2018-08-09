@@ -1,0 +1,134 @@
+/*
+ * Youlema.com Inc.
+ * Copyright (c) 2011-2013 All Rights Reserved
+ */
+
+body {
+    background-image: url(../images/main-pic.png);
+    background-size: 100% 640px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: backgroundChange 10s 9999;
+}
+
+.top-broadcast {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    opacity: 0.7;
+    height: 19px;
+    padding-right: 10px;
+}
+
+.top-broadcast i {
+    color: #e90f18;
+}
+
+.top-broadcast span {
+    color: #ff5722;
+}
+
+.top-tips {
+    background-color: #fff;
+    border-bottom-right-radius: 5px;
+    opacity: 0.7;
+}
+
+.login-box {
+    background-image: url(../images/login/loginbox-bg.bak.png);
+    border-radius: 25px;
+    margin-top: 121px;
+    /*透明度*/
+    opacity: 0.7;
+    animation: boxSlideIn 3s;
+}
+
+.login-title {
+    margin-bottom: 5px;
+    background: url("../images/login/login-tit-bg.png") no-repeat;
+    border-radius: 25px;
+}
+
+.login-logo {
+    height: 80px;
+    padding-top: 19px;
+    margin-top: 10px;
+}
+
+.layui-row p {
+    vertical-align: middle;
+    border: 0;
+
+}
+
+form label {
+    font: 20px Georgia;
+    color: #fff;
+}
+
+form button {
+    margin: 10px 0px 0px 0px;
+}
+
+.layui-tab li {
+    font: 15px Georgia;
+    color: #fff;
+    width: 160px;
+}
+
+/*登录框上滑动画*/
+@keyframes boxSlideIn {
+    from {
+        background-image: url(../images/login/loginbox-bg.bak.png);
+        border-radius: 25px;
+        margin-top: 270px;
+        opacity: 0;
+    }
+    to {
+        background-image: url(../images/login/loginbox-bg.bak.png);
+        border-radius: 25px;
+        margin-top: 121px;
+        opacity: 0.7;
+    }
+}
+
+/*背景图片切换动画
+    闪烁问题：由于第一次加载图片需要一定的时间，在这段时间内图片还没加载出来，所以显示为空白
+*/
+/*@keyframes backgroundChange {*/
+/*0%{*/
+/*background-image: url(../images/login01.jpg);*/
+/*background-size: 100% 640px;*/
+/*background-repeat: no-repeat;*/
+/*background-attachment: fixed;*/
+/*}*/
+/*20%{*/
+/*background-image: url(../images/login02.jpg);*/
+/*background-size: 100% 640px;*/
+/*background-repeat: no-repeat;*/
+/*background-attachment: fixed;*/
+/*}*/
+/*40%{*/
+/*background-image: url(../images/login03.jpg);*/
+/*background-size: 100% 640px;*/
+/*background-repeat: no-repeat;*/
+/*background-attachment: fixed;*/
+/*}*/
+/*60%{*/
+/*background-image: url(../images/login04.jpg);*/
+/*background-size: 100% 640px;*/
+/*background-repeat: no-repeat;*/
+/*background-attachment: fixed;*/
+/*}*/
+/*80%{*/
+/*background-image: url(../images/login05.jpg);*/
+/*background-size: 100% 640px;*/
+/*background-repeat: no-repeat;*/
+/*background-attachment: fixed;*/
+/*}*/
+/*100%{*/
+/*background-image: url(../images/login01.jpg);*/
+/*background-size: 100% 640px;*/
+/*background-repeat: no-repeat;*/
+/*background-attachment: fixed;*/
+/*}*/
+/*}*/

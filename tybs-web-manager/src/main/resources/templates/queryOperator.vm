@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>首页</title>
+    <link href="/src/images/logoo.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="/libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="/src/css/queryOperator.css"/>
+</head>
+
+<body>
+<form class="layui-form">
+    <div class="layui-row">
+        <div class="layui-col-md4 layui-col-md-offset4 query-btn">
+            <label class="layui-form-label">操作员号：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="userOperInfoId" required lay-verify="required" placeholder="操作员号"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-button">
+                    <button class="layui-btn " lay-submit lay-filter="formDemo">查&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp询
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp置
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+<hr>
+
+<table class="layui-table">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>操作员号</th>
+        <th>姓名</th>
+        <th>身份证号</th>
+        <th>手机号</th>
+        <th>邮箱</th>
+        <th>电话号码</th>
+        <th>家庭住址</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    ###foreach($planConfigVo in ${result})
+    ##<tr data-id="${planConfigVo.id}">
+    ##    <td class="choose">
+    ##        <input type="text" id="${planConfigVo.id}" name="planConfigId" class="hide"
+    ##               value="${planConfigVo.id}"/>
+    ##        <input type="checkbox" name="subBox" class="menu_table-checkbox">
+    ##    </td>
+    ##    <td>$!{velocityCount}</td>
+    ##    <td id="${planConfigVo.id}-name">$!{planConfigVo.name}</td>
+    ##    <td >$!{planConfigVo.startTime}</td>
+        <td>1</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>贤心</td>
+        <td>2016-11-29</td>
+        <td>人生就像是一场修行</td>
+    </tr>
+    </tbody>
+</table>
+<script type="text/javascript" src="/libs/layui/layui.js"></script>
+<script type="text/javascript" src="/src/js/queryOperator.js"></script>
+</body>
+</html>

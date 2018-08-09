@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.ty</groupId>
+        <artifactId>tybs-all</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>tybs-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+    <!--spring-cloud-->
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Camden.SR2</version>
+        <type>pom</type>
+        <scope>import</scope>
+    </dependency>
+    </dependencies>
+    </dependencyManagement>
+    <!--<profiles>-->
+        <!--<profile>-->
+            <!--&lt;!&ndash; 开发环境 &ndash;&gt;-->
+            <!--<id>tybs-dev</id>-->
+            <!--<properties>-->
+                <!--<profiles.active>tybs-dev</profiles.active>-->
+                <!--<jar.source>1.7</jar.source>-->
+                <!--<jar.target>1.7</jar.target>-->
+            <!--</properties>-->
+            <!--<activation>-->
+                <!--<activeByDefault>true</activeByDefault>-->
+            <!--</activation>-->
+        <!--</profile>-->
+        <!--<profile>-->
+            <!--&lt;!&ndash; 开发环境 &ndash;&gt;-->
+            <!--<id>tybs-pro</id>-->
+            <!--<properties>-->
+                <!--<profiles.active>tybs-pro</profiles.active>-->
+                <!--<jar.source>1.7</jar.source>-->
+                <!--<jar.target>1.7</jar.target>-->
+            <!--</properties>-->
+            <!--<activation>-->
+                <!--<activeByDefault>true</activeByDefault>-->
+            <!--</activation>-->
+        <!--</profile>-->
+    <!--</profiles>-->
+
+</project>

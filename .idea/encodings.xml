@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-acct-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-acct-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-acct-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-acct-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-admin-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-base-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-base-server/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-base-server/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-base-server/sleuth-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-base-server/turbine-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-base-server/zuul-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-common-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-common-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-operator-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tybs-web-manager" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ty.acctservice.mapper.TransListMapper">
+
+    <insert id="addTransList" >
+        INSERT INTO trans_list_info(trans_List_Info_Id,trans_Name,trans_Id,trans_Amount,trans_Type,trans_time)
+        VALUES (#{transListInfoId},
+                #{transName},
+                #{transId},
+                #{transAmount},
+                #{transType},
+                #{openDate})
+    </insert>
+
+    <select id="queryTransList" resultType="vo.TransListInfoVo" parameterType="qo.TransListInfoQo">
+        SELECT * FROM trans_list_info WHERE trans_Id = #{transListInfoQo.transId}
+    </select>
+
+</mapper>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Youlema.com Inc.
+  ~ Copyright (c) 2011-2013 All Rights Reserved
+  -->
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper 为根元素节点， 一个namespace对应一个dao -->
+<mapper namespace="com.ty.adminservice.mapper.AdminMapper">
+    <select id="getUser" resultType="po.UserAdminInfo">
+        SELECT * FROM user_admin_info WHERE admin_Name = #{adminName} and admin_Pwd = #{adminPwd}
+    </select>
+
+    <insert id="addOper" parameterType="qo.UserOperInfoQo">
+        INSERT INTO user_oper_info(user_Oper_Info_Id,oper_Name,login_Pwd,oper_Sex,oper_Statu,oper_Mobil_Phone,oper_Tel,oper_Card_Id,oper_Email)
+        VALUES (#{UsrOperInfoQo.userOperInfoId},
+                #{UsrOperInfoQo.operName},
+                #{UsrOperInfoQo.loginPwd},
+                #{UsrOperInfoQo.operSex},
+                #{UsrOperInfoQo.operStatu},
+                #{UsrOperInfoQo.operMobilPhone},
+                #{UsrOperInfoQo.operTel},
+                #{UsrOperInfoQo.operCardId},
+                #{UsrOperInfoQo.operEmail})
+    </insert>
+
+    <select id="queryOper" resultType="vo.UserOperInfoVo" parameterType="qo.UserOperInfoQo">
+        SELECT * FROM user_oper_info WHERE user_Oper_Info_Id = #{userOperInfoQo.userOperInfoId}
+    </select>
+
+    <delete id="delOper" parameterType="qo.UserOperInfoQo">
+        DELETE FROM user_oper_info WHERE user_Oper_Info_Id = #{userOperInfoQo.userOperInfoId}
+    </delete>
+
+    <update id="updateOper" parameterType="qo.UserOperInfoQo">
+    UPDATE user_oper_info SET
+            user_Oper_Info_Id = #{userOperInfoQo.userOperInfoId},
+            oper_Name = #{userOperInfoQo.operName},
+            oper_Card_Id = #{userOperInfoQo.operCardId},
+            oper_Mobil_Phone = #{userOperInfoQo.operMobilPhone},
+            oper_Email = #{userOperInfoQo.operEmail},
+            oper_Tel = #{userOperInfoQo.operTel},
+            oper_Statu = #{userOperInfoQo.operStatu}
+    WHERE user_Oper_Info_Id = #{userOperInfoQo.userOperInfoId}
+</update>
+
+</mapper>

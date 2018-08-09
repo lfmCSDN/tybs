@@ -1,0 +1,51 @@
+.layui-logo {
+    background-color: #337ab7;
+}
+
+.layui-logo span {
+    color: white;
+    size: 25px;
+}
+
+.layui-body {
+    /*border:1px solid #a0df61;*/
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 15px;
+    width: 83%;
+    height: 83%;
+}
+
+.layui-this {
+    background-image: url(../images/main-pic.png);
+    background-size: 100% 640px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: backgroundChange 10s 9999;
+}
+
+.layui-tab-content {
+    background: #fff;
+    padding: 15px 15px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*选择卡第一个不可以删除*/
+.layui-tab-title li:first-child i {
+    display: none;
+}
+
+.welcome_bg {
+    width: 100%;
+    height: 100%;
+    background: url(../images/login/login-bg.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    height: 600px;
+    line-height: 600px;
+    color:#666666;
+    font-size: 70px;
+}

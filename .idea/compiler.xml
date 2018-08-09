@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="eureka-server" />
+        <module name="sleuth-server" />
+        <module name="turbine-server" />
+        <module name="tybs-acct-service" />
+        <module name="tybs-admin-service" />
+        <module name="tybs-common-api" />
+        <module name="tybs-operator-service" />
+        <module name="tybs-web-manager" />
+        <module name="zuul-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="acct-service" target="1.8" />
+      <module name="admin-service" target="1.8" />
+      <module name="common-api" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="operator-service" target="1.8" />
+      <module name="sc-base-server" target="1.8" />
+      <module name="sleuth-server" target="1.8" />
+      <module name="turbine-server" target="1.8" />
+      <module name="tybs-acct-service" target="1.8" />
+      <module name="tybs-admin-service" target="1.8" />
+      <module name="tybs-all" target="1.8" />
+      <module name="tybs-base-server" target="1.8" />
+      <module name="tybs-common-api" target="1.8" />
+      <module name="tybs-operator-service" target="1.8" />
+      <module name="tybs-parent" target="1.8" />
+      <module name="tybs-web-manager" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

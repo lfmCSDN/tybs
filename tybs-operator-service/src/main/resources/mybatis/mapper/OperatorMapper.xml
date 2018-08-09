@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Youlema.com Inc.
+  ~ Copyright (c) 2011-2013 All Rights Reserved
+  -->
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper 为根元素节点， 一个namespace对应一个dao -->
+<mapper namespace="com.ty.operatorservice.mapper.OperatorMapper">
+
+    <!--操作员登录-->
+    <select id="getOperator" resultType="po.UserOperInfo">
+        SELECT * FROM user_oper_info WHERE oper_Name = #{operName} and login_Pwd = #{loginPwd}
+    </select>
+
+</mapper>

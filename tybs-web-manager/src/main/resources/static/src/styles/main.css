@@ -1,0 +1,61 @@
+/*cheng.c*/
+
+/*去除iframe的左边框*/
+body {
+    overflow-x: hidden;
+}
+
+iframe {
+    border-left-style: hidden;
+    border-top-style: hidden;
+    max-height: 100%;
+    min-height: 87%;
+    position: absolute;
+    bottom: 0;
+    /*  overflow-x: hidden;*/
+    margin-top: 5px;
+}
+
+/*为内容设置位置*/
+#content {
+    margin: 1% auto 1% 0;
+
+}
+
+/*默认情况下a标签的文字颜色，浅黑色*/
+#content a {
+    color: #333;
+}
+
+/*修改button元素的默认背景色*/
+.btn-info {
+    color: #333;
+    /*background-color:#B4C8D2;*/
+}
+
+/*.btn-primary{
+    background-color:#B4C8D2;
+    color:#333;
+}*/
+button {
+    width: 120px;
+}
+
+/*#submit{
+    margin-right:100px;
+}*/
+h3 {
+    border-bottom: 2px solid #9A9A9A;
+    padding-bottom: 3px;
+}
+
+.page-header {
+    border-bottom: hidden;
+}
+.layui-tab ul.layui-tab-title li:nth-child(1) i {
+    display: none;
+}
+
+
+
+

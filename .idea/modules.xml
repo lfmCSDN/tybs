@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tybs-base-server/config-server/config-server.iml" filepath="$PROJECT_DIR$/tybs-base-server/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-base-server/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/tybs-base-server/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-base-server/sleuth-server/sleuth-server.iml" filepath="$PROJECT_DIR$/tybs-base-server/sleuth-server/sleuth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-base-server/turbine-server/turbine-server.iml" filepath="$PROJECT_DIR$/tybs-base-server/turbine-server/turbine-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-acct-service/tybs-acct-service.iml" filepath="$PROJECT_DIR$/tybs-acct-service/tybs-acct-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-admin-service/tybs-admin-service.iml" filepath="$PROJECT_DIR$/tybs-admin-service/tybs-admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-all.iml" filepath="$PROJECT_DIR$/tybs-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-base-server/tybs-base-server.iml" filepath="$PROJECT_DIR$/tybs-base-server/tybs-base-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-common-api/tybs-common-api.iml" filepath="$PROJECT_DIR$/tybs-common-api/tybs-common-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-operator-service/tybs-operator-service.iml" filepath="$PROJECT_DIR$/tybs-operator-service/tybs-operator-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-parent/tybs-parent.iml" filepath="$PROJECT_DIR$/tybs-parent/tybs-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-web-manager/tybs-web-manager.iml" filepath="$PROJECT_DIR$/tybs-web-manager/tybs-web-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tybs-base-server/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/tybs-base-server/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

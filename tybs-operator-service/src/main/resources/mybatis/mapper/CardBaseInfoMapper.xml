@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Youlema.com Inc.
+  ~ Copyright (c) 2011-2013 All Rights Reserved
+  -->
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper 为根元素节点， 一个namespace对应一个dao -->
+<mapper namespace="com.ty.operatorservice.mapper.CardBaseInfoMapper">
+    <!--银行卡基本信息-->
+    <insert id="addCardBaseInfo" parameterType="req.AddUserReq">
+        INSERT INTO card_base_info(card_Base_Info_Id,user_Base_Info_Id,card_Id,trans_Pwd,stat,open_Date,oveage)
+        VALUES (#{addUserReq.cardBaseInfoId},
+                #{addUserReq.userBaseInfoId},
+                #{addUserReq.cardId},
+                #{addUserReq.transPwd},
+                #{addUserReq.stat},
+                #{addUserReq.openDate},
+                #{addUserReq.oveage})
+    </insert>
+
+    <!--挂失银行卡-->
+    <update id="lostUser">
+        UPDATE  card_base_info
+        SET stat = "L"
+        WHERE card_Base_Info_Id = #{userCardId} AND  stat = "Y"
+    </update>
+
+    <!--解挂银行卡-->
+    <update id="upLostUser">
+        UPDATE  card_base_info
+        SET stat = "Y"
+        WHERE card_Base_Info_Id = #{userCardId} AND  stat = "L"
+    </update>
+
+    <!--冻结银行卡-->
+    <update id="freezeUser">
+        UPDATE  card_base_info
+        SET stat = "F"
+        WHERE card_Base_Info_Id = #{userCardId} AND  stat = "Y"
+    </update>
+
+    <!--解冻银行卡-->
+    <update id="upFreezeUser">
+        UPDATE  card_base_info
+        SET stat = "Y"
+        WHERE card_Base_Info_Id = #{userCardId} AND  stat = "F"
+    </update>
+
+    <!--注销卡-->
+    <delete id="delCardById" parameterType="po.CardBaseInfo">
+        DELETE FROM card_base_info WHERE card_Base_Info_Id=#{cardBaseInfoId}
+    </delete>
+
+    <!--根据外键查看卡对象-->
+    <select id="getObjectByForeignKey" resultType="po.CardBaseInfo">
+        SELECT * FROM card_base_info
+        WHERE user_Base_Info_Id = #{userBaseInfoId}
+    </select>
+
+    <!--根据外键查看卡对象-->
+    <select id="getObjectByCardId" resultType="po.CardBaseInfo">
+        SELECT * FROM card_base_info
+        WHERE card_Id = #{cardId}
+    </select>
+
+    <!--修改密码-->
+    <update id="modifyPwd">
+        UPDATE card_base_info
+           SET trans_Pwd = #{transPwd1}
+         WHERE card_Id = #{cardId}
+    </update>
+
+</mapper>
